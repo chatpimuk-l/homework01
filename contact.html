@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        .container {
+            display: inline-block;
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding:30px 20px 20px 50px ;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <a href="./index.html">Home</a> |
+        <a href="./Education.html">Education</a> |
+        <a href="./Work.html">Work Experience</a> |
+        <a href="./contact.html">Contact Me</a> |
+    </p>
+    <hr>
+    <h1>Contact Me</h1>
+
+    <div class="container">
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+            <p>Enter your info...</p>
+            <label>Your name <br>
+                <input type="text" name="name" style="width: 70%;">
+            </label>
+            <br><br>
+            <label>Your email <br>
+                <input type="email" name="email" style="width: 70%;">
+            </label>
+            <br><br>
+            <label for="gender">Gender </label> <br>
+            <select name="gender" id="gender" style="width: 70%;">
+            <option value="" disabled selected>select..</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="LGBT">LGBT</option>
+            <option value="not">Prefer not to say</option>
+        </select>
+        <br><br>
+        <label>Message <br>
+            <textarea name="note" cols="30" rows="10" placeholder="Let's take a note!" style="width: 70%;"></textarea>
+        </label>  
+        <br><br>
+        <input type="submit" value="send">
+        <input type="reset" name="clear">  
+        </form>
+    </div>
+</body>
+</html>
